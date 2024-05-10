@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+  <img class="animate__animated animate__fadeIn" [src]="imgUrl" [alt]="title" (load)="isLoaded()" width="300" [ngStyle]="{ display: hasLoaded ? '' : 'none'}">
+
+  <img *ngIf="!hasLoaded" src="assets/tail-spin.svg" height="35" width="35" class="mt-3" alt="">
+</div>

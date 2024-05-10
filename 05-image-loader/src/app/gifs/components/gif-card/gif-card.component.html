@@ -1,0 +1,15 @@
+<div>
+  <div class="card mb-2 text-center bg-dark">
+
+
+    <!-- <img [src]="this.gif?.images?.fixed_height?.url" [alt]="this.gif?.title" class="card-img-top"> -->
+
+    <app-shared-component-lazy-image [imgUrl]="this.gif!.images!.fixed_height!.url" [title]="this.gif!.title"></app-shared-component-lazy-image>
+
+    <div class="card-body text-white">
+      <p class="card-text">
+        {{ this.gif?.title }}
+      </p>
+    </div>
+  </div>
+</div>
